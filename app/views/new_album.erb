@@ -1,0 +1,7 @@
+<div class='container'>
+ <form action='<%= "/users/#{@user_id}/create_album" %>' method="post" enctype="multipart/form-data">
+  <p>Title: <input type="text" name="title"></p>
+  <p>Description: <textarea name="desc"> 256 char description </textarea></p>
+  <input type="submit">
+</form>
+</div>

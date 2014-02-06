@@ -1,0 +1,8 @@
+<div class="container">
+ <form action='<%= "/albums/#{@album_id}/photos/create" %>' method="post" enctype="multipart/form-data">
+  <p><input type="file" name="photo_file"></p>
+  <p>Title: <input type="text" name="title"></p>
+  <p>Description: <textarea name="desc"> 256 char description </textarea></p>
+  <input type="submit">
+</form>
+</div>

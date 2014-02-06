@@ -1,0 +1,12 @@
+<div class="container">
+<p><a href='<%="/albums/#{@album.id}/photos/new"%>'>Add photo to album</a></p>
+<p><h2> ALBUM PAGE FOR <%= @album.title %> </h2></p>
+<p> DESCRIPTION: <%= @album.description %> </p>
+<p></p>
+<p>Photos:</p>
+<% @photos.each do |photo| %>
+  <p><img src='<%="/photos/#{photo.filename}"%>'><%= photo.title %></p>
+  <p><%= photo.description %></p>
+  <p></p>
+<% end %>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+<p><a href='<%="/albums/new" %>'>Make new album</a></p>
+<p><h2> PROFILE PAGE FOR <%= @user.username %> </h2></p>
+<p></p>
+<p>Albums:</p>
+<% @albums.each do |album| %>
+  <p><a href='<%="/albums/#{album.id}"%>'><%= album.title %></a></p>
+  <p><%= album.description %></p>
+  <p></p>
+<% end %>
+</div>
